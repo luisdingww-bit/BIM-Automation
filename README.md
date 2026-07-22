@@ -1,56 +1,26 @@
 ﻿# BIM-Automation 🔄🏢
 
-> Intelligent BIM workflow automation tools.
+> Intelligent BIM workflow automation tools for Revit & Dynamo.
 
 ---
 
-## Overview
+## Scripts
 
-Developing automated workflows for BIM (Building Information Modeling) to streamline architectural design and documentation processes.
+### `scripts/room_scheduler.py`
+Extract and export room data from Revit models to CSV.
 
----
+### `scripts/family_generator.py`
+Generate parametric Revit families from JSON definitions.
 
-## Repository Structure
+### Dynamo Scripts
+Dynamo visual scripts for Revit automation.
+
+## Structure
 
 ```
 BIM-Automation/
-├── scripts/     ← Python & C# automation scripts
-├── families/    ← Revit family files (.rfa)
-├── dynamo/      ← Dynamo visual scripts (.dyn)
-└── docs/        ← Documentation & tutorials
+├── scripts/     ← Python & C# automation
+├── families/    ← Revit .rfa definitions
+├── dynamo/      ← Dynamo .dyn scripts
+└── docs/        ← Documentation
 ```
-
----
-
-## Tools
-
-- **Revit API** — C# plugin development
-- **Dynamo** — Visual scripting for Revit
-- **Python** — Automation scripts
-- **IfcOpenShell** — IFC file processing
-
----
-
-## Projects
-
-### Automated Room Scheduling
-- Extract room data from Revit
-- Generate schedule reports automatically
-- Export to Excel
-
-### Parametric Family Generator
-- Create Revit families from Excel data
-- Batch parameter updates
-- Automated placement
-
----
-
-## License
-
-MIT
-
----
-
-## Contact
-
-**Louis** — luisdingww@gmail.com
