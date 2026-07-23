@@ -1,26 +1,31 @@
-﻿# BIM-Automation 🔄🏢
+# BIM-Automation
 
-> Intelligent BIM workflow automation tools for Revit & Dynamo.
+Parametric BIM content & schedule generators for architecture workflows.
 
----
+> ⚠️ **Status: standalone Python generators (partial).** Produces Revit / Dynamo-ready definitions and schedules as data; live Revit API / Dynamo interop is planned.
 
-## Scripts
+## What's implemented
 
-### `scripts/room_scheduler.py`
-Extract and export room data from Revit models to CSV.
+- **`family_generator.py`** — builds parametric **door / window family definitions** (parameters, dimensions, types) and exports them as `family_definitions.json`.
+- **`room_scheduler.py`** — compiles a room list and exports a **CSV room schedule** with department area summaries.
 
-### `scripts/family_generator.py`
-Generate parametric Revit families from JSON definitions.
+## Honest notes
 
-### Dynamo Scripts
-Dynamo visual scripts for Revit automation.
+- These are **pure-Python data generators** (stdlib `json` / `csv`). They do **not** currently call the Revit API or run inside Dynamo.
+- The generated JSON / CSV are structured to drop into Revit / Dynamo pipelines later.
 
-## Structure
+## Roadmap
 
+- Revit API (`pythonnet` + `RevitAPI.dll`) live family creation.
+- Dynamo `.dyn` graph generation from the same definitions.
+
+## Run
+
+```bash
+python family_generator.py   # -> family_definitions.json
+python room_scheduler.py     # -> room_schedule.csv
 ```
-BIM-Automation/
-├── scripts/     ← Python & C# automation
-├── families/    ← Revit .rfa definitions
-├── dynamo/      ← Dynamo .dyn scripts
-└── docs/        ← Documentation
-```
+
+## License
+
+MIT
