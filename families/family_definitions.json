@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Door",
+    "name": "D-901",
+    "parameters": {
+      "Width": 0.9,
+      "Height": 2.1,
+      "PanelType": "Solid Wood",
+      "Thickness": 0.04,
+      "FrameDepth": 0.08
+    }
+  },
+  {
+    "type": "Door",
+    "name": "D-121",
+    "parameters": {
+      "Width": 1.2,
+      "Height": 2.1,
+      "PanelType": "Glass",
+      "Thickness": 0.04,
+      "FrameDepth": 0.08
+    }
+  },
+  {
+    "type": "Window",
+    "name": "W-151",
+    "parameters": {
+      "Width": 1.5,
+      "Height": 1.5,
+      "SillHeight": 0.9,
+      "FrameDepth": 0.06
+    }
+  }
+]
