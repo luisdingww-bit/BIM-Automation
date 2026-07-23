@@ -26,6 +26,15 @@ python family_generator.py   # -> family_definitions.json
 python room_scheduler.py     # -> room_schedule.csv
 ```
 
+## Sample outputs (generated)
+
+The generators' output is committed so the repo is self-demonstrating
+without a Revit / Dynamo session:
+
+- [`families/family_definitions.json`](families/family_definitions.json) — 3 sample families (2 doors, 1 window)
+- [`docs/sample_schedule.csv`](docs/sample_schedule.csv) — 3-room schedule
+- [`docs/SAMPLE_OUTPUT.md`](docs/SAMPLE_OUTPUT.md) — rendered preview (tables)
+
 ## License
 
 MIT
